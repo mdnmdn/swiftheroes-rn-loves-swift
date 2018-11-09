@@ -31,12 +31,10 @@ class ViewController: UIViewController {
             initialProperties: nil,
             launchOptions: nil
         )
-        //let vc = UIViewController()
-        //vc.view = rootView
         
         rootView!.frame = (self.reactHost?.bounds)!
-        rootView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.reactHost?.autoresizesSubviews = true
+//        rootView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+  //      self.reactHost?.autoresizesSubviews = true
         
         self.reactHost!.addSubview(rootView!);
         //let host = self.reactHost
