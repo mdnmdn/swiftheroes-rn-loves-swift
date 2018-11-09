@@ -4,9 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#00D',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    color: '#FFF',
+    fontSize: 20,
   },
 });
 
@@ -16,7 +20,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!!</Text>
+        <Text style={styles.text}>I'm a react native App</Text>
       </View>
     );
   }

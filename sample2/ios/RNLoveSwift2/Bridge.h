@@ -9,9 +9,12 @@
 #ifndef Bridge_h
 #define Bridge_h
 
-
-#import <React/RCTBundleURLProvider.h>
-#import <React/RCTRootView.h>
 #import "React/RCTBridgeModule.h"
+
+@interface RCT_EXTERN_MODULE(RNBridge, NSObject)
+
+RCT_EXTERN_METHOD(writeText:(NSString *)val)
+
+@end
 
 #endif /* Bridge_h */

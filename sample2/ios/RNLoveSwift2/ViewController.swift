@@ -11,10 +11,14 @@ import React
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel?
     @IBOutlet weak var reactHost: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        RNBridge.mainViewController = self
+        
         
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         let myData:NSDictionary = ["infos":
@@ -36,11 +40,15 @@ class ViewController: UIViewController {
         self.reactHost!.addSubview(rootView!);
     }
 
+    func writeInfo(val: String) -> Void {
+        self.label!.text = val
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
 

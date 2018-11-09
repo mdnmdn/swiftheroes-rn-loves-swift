@@ -4,14 +4,13 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FDE',
+    backgroundColor: '#1e90ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-
-  button: {
-    textDecorationLine: 'underline',
-    textDecorationColor: '#00F',
+  text: {
+    color: '#FFF',
+    fontSize: 28,
   }
 });
 
@@ -22,17 +21,12 @@ export default class App extends React.Component {
     super(props);    
   }
 
-  click() {
-    
-  }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Wow!</Text>        
-        <Button title="click me!" onPress={() =>this.click()} />
-               
+        <Text style={styles.text}>I'm React Native embedded!</Text>
+        <Text style={styles.text}>Wow!</Text>
       </View>
     );
   }

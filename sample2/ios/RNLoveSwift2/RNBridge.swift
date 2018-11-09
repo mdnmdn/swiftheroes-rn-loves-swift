@@ -16,7 +16,14 @@ class RNBridge: NSObject {
         RNBridge.instace = self
     }
     
+    static var mainViewController: ViewController?
+    
     static var instace:RNBridge?
+    
+    @objc(writeText:)
+    public func writeText(val: String) -> Void {
+        RNBridge.mainViewController!.writeInfo(val: val);
+    }
     
     static func requiresMainQueueSetup() -> Bool {
         return true
