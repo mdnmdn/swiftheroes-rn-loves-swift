@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
-        let mockData:NSDictionary = ["scores":
+        let myData:NSDictionary = ["infos":
             [
                 ["name":"Alex", "value":"42"],
                 ["name":"Joel", "value":"10"]
@@ -27,19 +27,13 @@ class ViewController: UIViewController {
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
             moduleName: "RNLoveSwift2",
-            //initialProperties: mockData as [NSObject : AnyObject],
-            initialProperties: nil,
+            initialProperties: myData as [NSObject : AnyObject],
             launchOptions: nil
         )
         
         rootView!.frame = (self.reactHost?.bounds)!
-//        rootView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-  //      self.reactHost?.autoresizesSubviews = true
         
         self.reactHost!.addSubview(rootView!);
-        //let host = self.reactHost
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

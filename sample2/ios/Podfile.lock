@@ -26,11 +26,24 @@ PODS:
     - React/PrivateDatabase
   - React/jsinspector (0.56.1)
   - React/PrivateDatabase (0.56.1)
+  - React/RCTActionSheet (0.56.1):
+    - React/Core
+  - React/RCTAnimation (0.56.1):
+    - React/Core
   - React/RCTBlob (0.56.1):
+    - React/Core
+  - React/RCTImage (0.56.1):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.56.1):
     - React/Core
   - React/RCTNetwork (0.56.1):
     - React/Core
+  - React/RCTSettings (0.56.1):
+    - React/Core
   - React/RCTText (0.56.1):
+    - React/Core
+  - React/RCTVibration (0.56.1):
     - React/Core
   - React/RCTWebSocket (0.56.1):
     - React/Core
@@ -45,8 +58,14 @@ DEPENDENCIES:
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -74,6 +93,6 @@ SPEC CHECKSUMS:
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 9bc435f1ab613027a5f3bbc44933bb69db4cdd26
+PODFILE CHECKSUM: c6392b6e3003fa2dafcef8c5a9de5b8cd4f4b62b
 
 COCOAPODS: 1.5.0

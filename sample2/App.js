@@ -8,6 +8,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  button: {
+    textDecorationLine: 'underline',
+    textDecorationColor: '#00F',
+  }
 });
 
 
@@ -25,8 +30,9 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
-        <Text>Wow!</Text>
-        <Button title="click me" onPress={() =>this.click()}/>          
+        <Text>Wow!</Text>        
+        <Button title="click me!" onPress={() =>this.click()} />
+               
       </View>
     );
   }
